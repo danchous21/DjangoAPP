@@ -1,17 +1,14 @@
-{% load menu_tags %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Site</title>
-</head>
-<body>
-    <header>
-        {% draw_menu 'main_menu' %}
-    </header>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-</body>
-</html>
+<!-- В templates/menu/base.html -->
+<ul>
+    {% for node in menu_tree %}
+        <li>{{ node.item.title }}
+            {% if node.children %}
+                <ul>
+                    {% for child in node.children %}
+                        <li>{{ child.item.title }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

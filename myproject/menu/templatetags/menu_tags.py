@@ -1,3 +1,4 @@
+# menu/templatetags/menu_tags.py
 from django import template
 from menu.models import MenuItem
 
@@ -13,9 +14,13 @@ def draw_menu(context, menu_name):
     return menu_tree
 
 def build_menu_tree(items, current_url, parent=None):
-    tree = []
-    for item in items.filter(parent=parent):
-        item.is_active = current_url == item.url or (item.named_url and request.resolver_match.url_name == item.named_url)
-        item.children = build_menu_tree(items, current_url, item)
-        tree.append(item)
-    return tree
+    menu_tree = []
+    for item in items:
+        if item.parent == parent:
+            children = build_menu_tree(items, current_url, item)
+            menu_tree.append({
+                'item': item,
+                'children': children,
+            })
+    return menu_tree
+

@@ -1,3 +1,4 @@
+# myproject/settings.py
 """
 Django settings for myproject project.
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/db.sqlite3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/manage.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/admin.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/apps.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/migrations/0001_initial.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/migrations/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/models.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/templates/menu/menu.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/templates/menu_page.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/tests.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/menu/views.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/myproject/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/myproject/asgi.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/myproject/settings.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/myproject/urls.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myproject/myproject/wsgi.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/requirements.txt" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1251" />
+  </component>
+</project>
